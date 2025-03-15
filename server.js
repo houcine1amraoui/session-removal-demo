@@ -121,6 +121,7 @@ app.post("/logout", (req, res) => {
   return res.send("Succefully Logged out");
 });
 
+//
 const PORT = 1000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
