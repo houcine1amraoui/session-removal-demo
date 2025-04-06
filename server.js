@@ -94,14 +94,6 @@ function isAuthenticated(req, res, next) {
   next();
 }
 
-// Logout route
-// app.post("/logout", (req, res) => {
-//   res.cookie("session", "", {
-//     maxAge: 0,
-//   });
-//   res.json({ message: "Logged out successfully" });
-// });
-
 // Session Removal-based Logout
 // Remove sessionId from valid sessions and Set Max-Age of cookie to zero
 app.post("/logout", (req, res) => {
